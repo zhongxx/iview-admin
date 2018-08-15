@@ -6,10 +6,11 @@
 
 # iView Admin
 [![](https://img.shields.io/travis/iview/iview-admin.svg?style=flat-square)](https://travis-ci.org/iview/iview-admin)
-[![vue](https://img.shields.io/badge/vue-2.5.2-brightgreen.svg?style=flat-square)](https://github.com/vuejs/vue)
-[![iview ui](https://img.shields.io/badge/iview-2.7.2-brightgreen.svg?style=flat-square)](https://github.com/iview/iview)
+[![vue](https://img.shields.io/badge/vue-2.5.13-brightgreen.svg?style=flat-square)](https://github.com/vuejs/vue)
+[![iview ui](https://img.shields.io/badge/iview-2.8.0-brightgreen.svg?style=flat-square)](https://github.com/iview/iview)
+[![npm](https://img.shields.io/npm/l/express.svg)]()
 
-## Current version：v1.2.2
+## Current version：v1.3.1
 [Update log](https://github.com/iview/iview-admin/releases)
 
 [WIKI](https://github.com/iview/iview-admin/wiki)
@@ -36,7 +37,7 @@ npm run build
 ```
 
 ## Introduction
-&emsp;&emsp;iView-admin is a suite of backstage management system developed based on Vue.js and use the UI Toolkit -- [iView](https://www.iviewui.com). It's maintained by the TalkingData front-end visualization team member. iView-admin compolies with iView design and development contract, use uniform style, and more features are developing. If you want to check the update of iView-admin, you can view [Update log](https://github.com/iview/iview-admin/releases) to get. If you are new to iView-admin, you can go to [WIKI](https://github.com/iview/iview-admin/wiki) for tutorials. If you want to experience iView-admin online, you can visit [View online](https://iview.github.io/iview-admin) to experience. If you just want a sober and cool interface then you can download [Simplify Templates] (https://github.com/iview/iview-admin/tree/template) for development.
+&emsp;&emsp;iView-admin is a suite of backstage management system developed based on Vue.js and use the UI Toolkit -- [iView](https://www.iviewui.com). It's maintained by the TalkingData front-end visualization team member. iView-admin compolies with iView design and development contract, use uniform style, and more features are developing. If you want to check the update of iView-admin, you can view [Update log](https://github.com/iview/iview-admin/releases) to get. If you are new to iView-admin, you can go to [WIKI](https://github.com/iview/iview-admin/wiki) for tutorials. If you want to experience iView-admin online, you can visit [View online](https://iview.github.io/iview-admin) to experience. If you just want a sober and cool interface then you can download [Simplify Templates](https://github.com/iview/iview-admin/tree/template) for development.
 
 ## Features
 
@@ -53,6 +54,7 @@ npm run build
     - Dragable list
     - File upload
     - Count animation
+    - Split pane
 - Form
     - Artical publish
     - Workflow
@@ -129,7 +131,7 @@ npm run build
 
 ## Show
 
-- log in
+- home
 ![image](https://github.com/iview/iview-admin/raw/dev/github-gif/home.gif)
 
 - tag navigation
@@ -149,6 +151,9 @@ npm run build
 
 - count animation
 ![image](https://github.com/iview/iview-admin/raw/dev/github-gif/count-to.gif)
+
+- split-pane
+![image](https://github.com/iview/iview-admin/raw/dev/github-gif/split-pane.gif)
 
 - artical publish
 ![image](https://github.com/iview/iview-admin/raw/dev/github-gif/article-publish.gif)

@@ -88,6 +88,9 @@ export default {
                         break;
                     }
                 }
+            } else {
+                let tagWidth = event.target.parentNode.offsetWidth;
+                this.tagBodyLeft = Math.min(this.tagBodyLeft + tagWidth, 0);
             }
             this.$store.commit('removeTag', name);
             this.$store.commit('closePage', name);
@@ -149,6 +152,7 @@ export default {
                 this.tagBodyLeft = -tag.offsetLeft + 10;
             } else if (tag.offsetLeft + 10 > -this.tagBodyLeft && tag.offsetLeft + tag.offsetWidth < -this.tagBodyLeft + this.$refs.scrollCon.offsetWidth - 100) {
                 // 标签在可视区域
+                this.tagBodyLeft = Math.min(0, this.$refs.scrollCon.offsetWidth - 100 - tag.offsetWidth - tag.offsetLeft - 20);
             } else {
                 // 标签在可视区域右侧
                 this.tagBodyLeft = -(tag.offsetLeft - (this.$refs.scrollCon.offsetWidth - 100 - tag.offsetWidth) + 20);
@@ -164,7 +168,7 @@ export default {
                     this.moveToView(tag);
                 }
             });
-        }, 1);  // 这里不设定时器就会有偏移bug
+        }, 1); // 这里不设定时器就会有偏移bug
         this.tagsCount = this.tagsList.length;
     },
     watch: {

@@ -8,7 +8,12 @@
         <Row>
             <Col span="16">
                 <Card>
-                    <DragableTable refs="table1" v-model="tableData" :columnsList="columnsList" @on-start="handleOnstart1" @on-end="handleOnend1" ></DragableTable>
+                    <DragableTable 
+                        v-model="tableData" 
+                        :columns-list="columnsList" 
+                        @on-start="handleOnstart1" 
+                        @on-end="handleOnend1" 
+                    ></DragableTable>
                 </Card>
             </Col>
             <Col span="8" class="padding-left-10 height-100" >
@@ -59,7 +64,7 @@
             </Col>
             <Col span="16" class="padding-left-10">
                 <Card>
-                    <DragableTable refs="table2" :columnsList="columnsList" v-model="tableData" @on-start="handleOnstart2" @on-end="handleOnend2" @on-choose="handleOnchoose2" ></DragableTable>
+                    <DragableTable refs="table2" :columns-list="columnsList" v-model="tableData" @on-start="handleOnstart2" @on-end="handleOnend2" @on-choose="handleOnchoose2" ></DragableTable>
                 </Card>
             </Col>
         </Row>
